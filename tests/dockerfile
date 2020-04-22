@@ -1,0 +1,8 @@
+FROM lab1_docker
+
+RUN pip install -e '.[test]'
+
+RUN coverage run -m pytest
+
+RUN chmod +x ./tests/tests.sh
+CMD ["./tests/tests.sh"]
