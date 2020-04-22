@@ -48,7 +48,7 @@ Test
     $ coverage run -m pytest
     $ coverage report
 
-Docker for flask
+Docker for flask app
 ----
 
 ::
