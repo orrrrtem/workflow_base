@@ -3,7 +3,7 @@ on: push
 jobs:
   code_style:
    runs-on: ubuntu-latest
-    steps:
+   steps:
       - uses: actions/checkout@v2
         name: Check out code
       - name: Python Style Checker
