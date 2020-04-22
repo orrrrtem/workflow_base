@@ -1,4 +1,4 @@
-JavaScript Ajax Example
+Java Script Ajax Example
 =======================
 
 Demonstrates how to post form data and process a JSON response using
