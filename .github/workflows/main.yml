@@ -12,6 +12,6 @@ jobs:
         with:
           username: ${{ secrets.user2 }}
           password: ${{ secrets.password2 }}
-          repository: orrrrtem/workflow_base
+          repository: artemaro2/workflow
           dockerfile: dockerfile
           tags: first
