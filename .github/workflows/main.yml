@@ -23,3 +23,15 @@ jobs:
           repository: artemaro2/workflow
           dockerfile: dockerfile
           tags: first
+
+  test:
+    needs: build_and_push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build test docker image
+        run: |
+           docker build -t lab1_docker:latest .
+           docker build -f tests/dockerfile -t lab1_test_docker:latest .
+      - name: Run tests
+        run: docker run lab1_test_docker:latest
